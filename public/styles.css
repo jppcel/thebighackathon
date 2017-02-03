@@ -3,13 +3,16 @@ body {
 }
 
 video{
-  width: 1280px;
-  height: 720px;
+  width: 100vw;
+  min-width: 1280px;
+  height: 100vh;
+  min-height: 720px;
 }
 
 img, canvas {
   width: 1280px;
   height: 720px;
+  display: none;
 }
 
 canvas {
