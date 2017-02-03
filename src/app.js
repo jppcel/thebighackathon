@@ -11,6 +11,14 @@
   var takePhoto = function(){
     ctx.drawImage(video, 0, 0, width, height);
     image.src = canvas.toDataURL('image/png');
+    var request = new Request('http://localhost:3000/sendphoto', {method: 'POST', body: '{"foo":"bar"}'});
+    fetch(request).then(function(success){
+      console.log(success)
+    })
+    .catch(function(error){
+      console.log("Deu merda:", error)
+    })
+    // console.log("Tirou foto", canvas.toDataURL('image/jpg'));
   }
 
   navigator
@@ -27,3 +35,4 @@
     });
 
 })()
+;
