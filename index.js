@@ -10,6 +10,9 @@ app.listen(app.get('port'), function() {
 });
 
 app.get('/', function(req,res){
+  res.sendFile(__dirname+'/redirect.html');
+});
+app.get('/capture', function(req,res){
   res.sendFile(__dirname+'/index.html');
 });
 app.get('/painel/', function(req,res){
