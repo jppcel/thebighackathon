@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+video{
+  width: 1280px;
+  height: 720px;
+}
+
+img, canvas {
+  width: 1280px;
+  height: 720px;
+}
+
+canvas {
+  display: none;
+}
